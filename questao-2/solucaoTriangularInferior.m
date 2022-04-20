@@ -13,6 +13,3 @@ function x = solucaoTriangularInferior(A, b)
         end
     end
 end
-
-% duvida: sera que consigo usar a matruz transposta para resolver com um
-% algoritmo apenas?

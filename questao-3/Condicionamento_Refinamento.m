@@ -1,10 +1,9 @@
 function resultado = Condicionamento_Refinamento(A,b)
     dim = length(A);
-    x = zeros(dim,1);
-    r = zeros(dim,1);
-    delta = zeros(dim,1);
+    %x = zeros(dim,1);
+    %r = zeros(dim,1);
+    %delta = zeros(dim,1);
    
-    %colocar antes transformar em LU
     [L,U,P] = LUP(A);
     x = SolucaoLU(L,U,P,b);
     

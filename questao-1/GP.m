@@ -15,7 +15,7 @@ function x = GP(A,b)
             b = trocarLinhas(b, j, q);
         end
         if A(j,j) == 0 % matriz singular 
-            break;
+            break;                    
         else
             r = 1/A(j,j);
             for i = j+1 : dim

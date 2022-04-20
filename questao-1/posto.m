@@ -1,13 +1,4 @@
-function r = posto (A)                %alterar para exemplo do pdf do lab
-    r = 0; % r de rank
-    [m, n] = size(A);
-    for ii = 1 : m
-        jj = 1;
-        while A(ii, jj) == 0 && jj < n
-            jj = jj + 1;
-        end
-        if A(ii, jj) ~= 0
-            r = r + 1;
-        end
-    end
+function r = posto (A)                
+    dim = size(A,1); % apenas para matrizes escalonadas
+    r = dim - sum(sum(abs(A')) == 0); % compara cada elemento do vetor que tem as somas das linhas de A com o inteiro zero
 end 

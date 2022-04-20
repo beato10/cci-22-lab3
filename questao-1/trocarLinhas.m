@@ -1,4 +1,4 @@
-function A = trocarLinhas (A, linhaAtual, linhaMaior) %aqui faz o que? altera matriz P
+function A = trocarLinhas (A, linhaAtual, linhaMaior) 
     linhaAux = A(linhaAtual, : );
     A(linhaAtual, : ) = A(linhaMaior, : );
     A(linhaMaior, : ) = linhaAux;
